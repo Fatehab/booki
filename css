@@ -893,4 +893,283 @@ nav {
     text-decoration: underline;
 }
 
+    
+    @media only screen and (max-width: 768px) {
+    
+        /* 1. Logo */
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150%;
+            margin-top: -70px;
+        }
+    
+        .logo img {
+            display: flex;
+            width: 150px;
+            height: 60px;
+            margin-left: 100px;
+        }
+        
+        /* 2. Navigation bar */
+        nav ul.nav {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin-top: 100px;
+            margin-left: -120px;
+        }
+    
+        nav ul.nav li {
+            margin: 0 5px;
+        }
+    
+        nav ul.nav li a {
+            padding: 10px 20px;
+            text-decoration: none;
+            transition: border-bottom 0.3s;
+        }
+    
+        nav ul.nav li a:hover {
+            border-bottom: 2px solid blue;
+        }
+    
+        /* 3. Headers */
+        .heading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: -40px;
+        }
+    
+        /* 4. Search bar */
+        .search-container {
+            display: flex;
+            justify-content: center;
+            margin-left: -70px;
+        }
+    
+        /* 5. Filters */
+        .filters {
+            width: 100%;
+            padding-left: 5%;
+            padding-right: 5%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    
+        .filters p {
+            font-size: 6vw;
+            flex-basis: 100%;
+            padding-left: 1.5%;
+        }
+    
+        .filter-button {
+            margin-left: 5px;
+            margin-bottom: 5%;
+            height: auto;
+            max-height: 75px;
+            border-radius: 50px;
+            justify-content: left;
+        }
+    
+        .filter-text {
+            font-size: 4.5vw;
+            padding-left: 3vw;
+            padding-right: 3vw;
+        }
+    
+        .filter-icon {
+            font-size: 4.5vw;
+            padding: 18px;
+            margin-right: 0px;
+            margin-left: -18px;
+            overflow: auto;
+        }
+    
+        .child {
+            padding: 18px 24px;
+        }
+    
+        /* Filters to be side by side */
+        .filter.low-cost,
+        .filter.romantic {
+            flex-basis: calc(50% - 5px);
+            margin-top: 20px;
+            margin-left: -120px;
+            margin-right: 5px;
+        }
+    
+        .filter.family-friendly,
+        .filter.pets-allowed {
+            flex-basis: calc(50% - 5px);
+            margin-top: 20px;
+            margin-left: 5px;
+            margin-right: 70px;
+        }
+    
+        /* 7. Accommodations header */
+        .accommodations-header {
+            margin-left: -40px;
+        }
+
+        .activities-header {
+            margin-bottom: 20px;  /* Adjust this value to increase or decrease space between the header and the card */
+            text-align: left;   /* To center the header */
+            margin-left: 20px;
+        }
+    
+        /* Cards */
+        .card, .smaller-card, .island-card, .national-park-card, .notre-card, .longchamp-card {
+            width: 280px;
+            height: 240px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 10px;
+        }
+    
+        .card .card-image img,
+        .smaller-card .smaller-card-image img,
+        .island-card .island-card-image img,
+        .national-park-card .national-park-card-image img,
+        .notre-card .notre-card-image img,
+        .longchamp-card .longchamp-card-image img {
+            display: block;
+            width: 100%;
+            height: 168px;
+            object-fit: cover;
+        }
+    
+        .card .card-content,
+        .smaller-card .card-content,
+        .island-card .island-card-content,
+        .national-park-card .national-park-card-content,
+        .notre-card .notre-card-content,
+        .longchamp-card .longchamp-content {
+            padding: 10px;
+            height: 72px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .card-title {
+            font-size: 16px;
+            text-align: center;
+        }
+    
+        /* Footer */
+        .footer-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+        }
+    
+        .footer-links ul,
+        .footer-links ul.right-links,
+        .footer-links ul.last-links {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 10px;
+            padding: 0;
+            list-style-type: none;
+        }
+    
+        .footer-links ul.right-links,
+        .footer-links ul.last-links {
+            margin-left: 0;
+        }
+    
+        .footer-links li {
+            margin-bottom: 5px;
+        }
+    
+        .footer-links a {
+            text-decoration: none;
+            color: inherit;
+            padding: 5px 0;
+        }
+    
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    /* Media Query for Tablets 768px */
+@media screen and (max-width: 768px) {
+    /* Your tablet-specific styles go here */
+
+
+    body {
+        font-size: 16px; /* Adjust as needed */
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav li a:hover {
+        border-top: none; /* Ensure no border on top */
+        border-bottom: 2px solid blue; /* Blue border on the bottom on hover */
+    }
+
+    .logo img {
+        width: 150px; /* Adjust as needed */
+    }
+
+    .heading h1 {
+        font-size: 28px; /* Adjust as needed */
+    }
+
+    .heading h2 {
+        font-size: 24px; /* Adjust as needed */
+    }
+
+    .search-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .search-bar {
+        width: 60%; /* Adjust as needed */
+    }
+
+    .filters {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .grey-box .white-box,
+    .red-box .white-box {
+        width: 48%; /* Example for having 2 boxes in a row, adjust as needed */
+        margin-right: 1%; /* Some spacing between them */
+        box-sizing: border-box;
+    }
+
+    .card, .smaller-card, .island-card, .national-park-card, .notre-card, .longchamp-card {
+        width: 48%; /* Example for having 2 cards in a row, adjust as needed */
+        margin-right: 1%; /* Some spacing between them */
+        box-sizing: border-box;
+    }
+}
+
+
+
+
+
+
+
 
